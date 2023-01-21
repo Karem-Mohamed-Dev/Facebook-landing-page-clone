@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #e9ebee;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+section .logo p:first-child {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+section .logo p:last-child {
+    font-size: 2rem;
+    width: 600px;
+}
+
+section .login {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: fit-content;
+    position: relative;
+}
+
+section .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .login form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    outline: none;
+    margin-bottom: 10px;
+    transition: .4s ease;
+}
+section .login form input:focus {
+    box-shadow: 0 0 5px 0 #177af285;
+    border-color: #1877f2;
+}
+section .login form .submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #1877f2;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+section .login form .submit:hover {
+    background-color: #176ad0;
+}
+section .login form a {
+    text-align: center;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1877f2;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 15px;
+}
+
+
+section .login form .new-acc {
+    width: fit-content;
+    padding: 12px;
+    background-color: #42b72a;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+section .login form .new-acc:hover {
+    background-color: #45aa31;
+}
+
+.last-line {
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: -50%;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+.last-line a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.last-line a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 50px;
+}
+footer p {
+    margin: 0 6px;
+    color: rgb(140, 140, 140);
+    cursor: pointer;
+}
+footer p:hover {
+    text-decoration: underline;
+}
+.foot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 1000px;
+}
+footer .language {
+    display: flex;
+    align-items: center;
+}
+footer .language button {
+    background-color: #e9ebee;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+footer .language button:hover {
+    background-color: #dde0e3;
+}
+footer .line {
+    margin: 10px 0;
+}
+footer .other {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .other p {
+    margin: 2px 10px;
+}
+
+footer span {
+    margin-top: 15px;
+    width: 100%;
+    text-align: start;
+    color: rgb(106, 106, 106);
+}
+
+@media (max-width: 767px) {
+    section {
+        flex-direction: column;
+        padding: 0;
+    }
+    section .logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    section .logo p:first-child {
+        text-align: center;
+        font-size: 4rem;
+    }
+    section .logo p:last-child {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    section .login {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        padding: 0;
+    }
+    section .logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    section .logo p:first-child {
+        text-align: center;
+        font-size: 4rem;
+    }
+    section .logo p:last-child {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    section .login {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        display: none;
+    }
+}
